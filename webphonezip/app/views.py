@@ -56,6 +56,7 @@ def notifications(request):
     context = {'cart': cart}
     return render(request, 'app/notifications.html', context)
 
+
 def gurantee(request):
     if request.user.is_authenticated:
         user = request.user
@@ -65,6 +66,17 @@ def gurantee(request):
         cart = {'getCartItemsAmount': 0}
     context = {'cart': cart}
     return render(request, 'app/gurantee.html', context)
+
+def aboutus(request):
+    if request.user.is_authenticated:
+        user = request.user
+        cart, created = Cart.objects.get_or_create(customer=user)
+    else:
+        user = None
+        cart = {'getCartItemsAmount': 0}
+    context = {'cart': cart}
+    return render(request, 'app/aboutus.html', context)
+
 
 
 # Load info product page
