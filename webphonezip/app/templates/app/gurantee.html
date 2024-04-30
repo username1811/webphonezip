@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %} {% load static %} {% block title %}
+<title>Chính sách bảo hành</title>
+<link rel="stylesheet" href="{% static 'app/css/notifications.css' %}" />
+{% endblock title %} {% block content %}
+<div class="noti">
+  <h2 class="noti__heading">Chính sách bảo hành</h2>
+
+  <div class="noti__content">
+    <span class="noti__empty-message">Bạn không có thông báo nào</span>
+  </div>
+</div>
+{% endblock content %}
