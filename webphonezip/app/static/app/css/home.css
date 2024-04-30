@@ -140,14 +140,15 @@ body{
     height: 32px;
     line-height: 32px;
     text-align: left;
-    font-size: 24px;
+    font-size: 0px;
     font-weight: 300;
     color: #747474;
 }
-  
+
 .content .content__header .content__filter{
-    display: flex;
+    display: inline-block;
     height: 30px;
+    padding: 0 0;
 }
   
 .content .content__header .content__filter h4{
@@ -159,9 +160,8 @@ body{
 }
   
 .content .content__header .content__filter-input{
-    width: 200px;
+    width: 160px;
     height: 100%;
-    margin: 0 12px;
 }
   
 .content .content__header .filter-category{
