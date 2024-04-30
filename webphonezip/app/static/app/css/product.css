@@ -56,7 +56,7 @@ html{
     text-align: justify;
 }
 
-.content__product .product-info #toggleDesBook{
+.content__product .product-info #toggleDesphone{
     font-size: 16px;
     font-weight: 400;
     text-decoration: underline;
@@ -188,13 +188,13 @@ html{
     opacity: 0.85;
 }
 
-.content__product .quantity__book{
+.content__product .quantity__phone{
     display: flex;
     margin: 16px 0;
     align-items: end;
 }
 
-.content__product .quantity__book .heading{
+.content__product .quantity__phone .heading{
     color: #626262;
     font-size: 18px;
     font-weight: 600;
@@ -202,7 +202,7 @@ html{
     margin-bottom: 4px;
 }
 
-.content__product .quantity__book .quantity{
+.content__product .quantity__phone .quantity{
     width: 120px;
     height: 36px;
     border: 1px solid #ccc;
@@ -211,7 +211,7 @@ html{
     justify-content: space-between;
 }
 
-.content__product .quantity__book .quantity__input{
+.content__product .quantity__phone .quantity__input{
     width: 60px;
     height: 100%;
     font-size: 24px;
@@ -221,19 +221,19 @@ html{
     text-align: center;
 }
 
-.content__product .quantity__book .quantity__input:focus{
+.content__product .quantity__phone .quantity__input:focus{
     outline: none;
 }
 
-.content__product .quantity__book .quantity__sub,
-.content__product .quantity__book .quantity__add{
+.content__product .quantity__phone .quantity__sub,
+.content__product .quantity__phone .quantity__add{
     width: 30%;
     font-size: 16px;
     border: none;
     background-color: #fff;
 }
 
-.content__product .quantity__book button:hover{
+.content__product .quantity__phone button:hover{
     cursor: pointer;
 }
 
@@ -267,7 +267,7 @@ html{
     transition: all 0.5s ease;
 }
 
-.suggest .book{
+.suggest .phone{
     min-width: 170px;
     margin: 12px 5px;
     background-color: #fff;
@@ -279,19 +279,19 @@ html{
     position: relative;
 }
   
-.suggest .book:hover{
+.suggest .phone:hover{
     z-index: 2;
     transform: scale(1.05);
     border: 1px solid #ff5227;
     box-shadow: 0 1px 5px 1px #ff000085;
 }
   
-.suggest .book .book__link{
+.suggest .phone .phone__link{
     text-decoration: none;
     color: #000;
 }
   
-.suggest .book .book__img{
+.suggest .phone .phone__img{
     width: 100%;
     height: 260px;
     background-size: cover;

@@ -36,7 +36,7 @@
                             <span>Giới thiệu: </span>
                             <div style="display: inline;">
                                 <p style="display: inline;" id="product-content-des" class="info__decription-content">{{product.description}}</p>
-                                <button id="toggleDesBook" type="button"></button>
+                                <button id="toggleDesphone" type="button"></button>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@
                         <div class="policy__link"><a href="">Xem thêm</a></div>
                     </div>
 
-                    <div class="quantity__book">
+                    <div class="quantity__phone">
                         <label class="heading" for="quantity">Số lượng:</label>
                         <div class="quantity">
                             <button type="button" class="quantity__sub"><i class="fa-solid fa-minus"></i></button>
@@ -89,9 +89,9 @@
         <div class="suggest__content">
             <div class="wrapper">
                 {% for productItem in products %}
-                <div class="book">
-                    <a href="{% url 'product' productItem.slugName %}" class="book__link">
-                        <div class="book__img" style="background-image: url({{productItem.imageURL}});"></div>
+                <div class="phone">
+                    <a href="{% url 'product' productItem.slugName %}" class="phone__link">
+                        <div class="phone__img" style="background-image: url({{productItem.imageURL}});"></div>
                     </a>
                 </div>
                 {% endfor %}

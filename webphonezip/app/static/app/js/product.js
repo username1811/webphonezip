@@ -1,7 +1,7 @@
 
 // Hide and show product description content
 var content = document.getElementById('product-content-des');
-var showDesBook = document.getElementById('toggleDesBook');
+var showDesphone = document.getElementById('toggleDesphone');
 var fullText = content.innerHTML;
 var shortText = '';
 var isTextTooLong = false;
@@ -11,29 +11,29 @@ if(fullText.length > 200){
     isTextTooLong = true;
     shortText = fullText.substring(0, 200) + "...";
     content.innerHTML = shortText;
-    showDesBook.innerHTML = 'Xem thêm';
-    showDesBook.style.display = 'inline';
+    showDesphone.innerHTML = 'Xem thêm';
+    showDesphone.style.display = 'inline';
 }
 
 // Add event showmore or hide product description content when it is too long
 if(isTextTooLong){
-    showDesBook.addEventListener('click', function(){
-        if(showDesBook.innerHTML === 'Xem thêm'){
+    showDesphone.addEventListener('click', function(){
+        if(showDesphone.innerHTML === 'Xem thêm'){
             content.innerHTML = fullText;
-            showDesBook.innerHTML = 'Thu gọn';
+            showDesphone.innerHTML = 'Thu gọn';
         }else{
             content.innerHTML = shortText;
-            showDesBook.innerHTML = 'Xem thêm';
+            showDesphone.innerHTML = 'Xem thêm';
         }
     });
 }else{
-    showDesBook.innerHTML = '';
-    showDesBook.style.display = 'none';
+    showDesphone.innerHTML = '';
+    showDesphone.style.display = 'none';
     content.innerHTML = fullText;
 }
 
 // Animation slider for suggest products
-var bookSuggest = document.querySelector('.suggest .suggest__content');
+var phoneSuggest = document.querySelector('.suggest .suggest__content');
 var suggestWrapper = document.querySelector('.suggest .suggest__content .wrapper');
 const prevSuggest = document.getElementById('prev-suggest');
 const nextSuggest = document.getElementById('next-suggest');
@@ -87,9 +87,9 @@ nextSuggest.addEventListener('mouseleave', function(){
 
 var buyNowButton = document.querySelector('.content__product .buy .buy-now-btn');
 var addToCartButton = document.querySelector('.content__product .buy .shop-cart-btn.add-to-cart');
-var productQuantityInput = document.querySelector('.content__product .quantity__book #quantity');
-var quantityNextButton = document.querySelector('.content__product .quantity__book .quantity__add');
-var quantityPrevButton = document.querySelector('.content__product .quantity__book .quantity__sub');
+var productQuantityInput = document.querySelector('.content__product .quantity__phone #quantity');
+var quantityNextButton = document.querySelector('.content__product .quantity__phone .quantity__add');
+var quantityPrevButton = document.querySelector('.content__product .quantity__phone .quantity__sub');
 
 quantityNextButton.addEventListener('click', function(){
     productQuantityInput.value = Number(productQuantityInput.value) + 1;

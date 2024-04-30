@@ -91,12 +91,12 @@
         padding-bottom: 32px;
     }
 
-    .content .book{
+    .content .phone{
         width: calc(50% - 8px);
         margin: 6px 4px;
     }
 
-    .content .book .book__img{
+    .content .phone .phone__img{
         aspect-ratio: 9/14;
     }
 
@@ -504,7 +504,7 @@
         margin: 0 12px;
     }
 
-    .content .book{
+    .content .phone{
         width: calc(25% - 16px);
     }
 

@@ -209,7 +209,7 @@ body{
     flex-wrap: wrap;
 }
 
-.content .book{
+.content .phone{
     width: calc(20% - 16px);
     margin: 12px 8px;
     background-color: #fff;
@@ -220,7 +220,7 @@ body{
     position: relative;
 }
   
-.content .book .add-to-cart{
+.content .phone .add-to-cart{
     box-sizing: content-box;
     position: absolute;
     left: -0.8px;
@@ -240,7 +240,7 @@ body{
     transition: visibility 0.1s, opacity 0.25s ease;
 }
   
-.content .book:hover{
+.content .phone:hover{
     z-index: 1;
     transform: scale(1.05);
     border: 1px solid #ff7d7d;
@@ -249,13 +249,13 @@ body{
     border-bottom-right-radius: 0;
 }
   
-.content .book:hover .add-to-cart{
+.content .phone:hover .add-to-cart{
     visibility: visible;
     opacity: 1;
     box-shadow: 0 1px 3px 1px #ffbaba;
 }
   
-.content .book .book__link{
+.content .phone .phone__link{
     border-radius: 6px;
     overflow: hidden;
     text-decoration: none;
@@ -264,14 +264,14 @@ body{
     width: 100%;
 }
   
-.content .book .book__img{
+.content .phone .phone__img{
     width: 100%;
     aspect-ratio: 10/8;
     background-size: cover;
     background-repeat: no-repeat;
 }
   
-.content .book .book__info{
+.content .phone .phone__info{
     background-color: #fff;
     width: 100%;
     height: 96px;
@@ -283,7 +283,7 @@ body{
     justify-content: space-between;
 }
   
-.content .book .info__name{
+.content .phone .info__name{
     font-size: 18px;
     font-weight: 300;
     line-height: 22px;
@@ -296,7 +296,7 @@ body{
     -webkit-line-clamp: 2;
 }
   
-.content .book .info__price{
+.content .phone .info__price{
     text-align: end;
     margin-right: 4px;
     overflow: hidden;
@@ -307,7 +307,7 @@ body{
     color: #ee4d2d;
 }
   
-.content .book .book__info del{
+.content .phone .phone__info del{
     font-size: 14px;
     font-weight: 300;
     color: #656565;

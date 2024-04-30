@@ -1,8 +1,8 @@
 
 const termsOfUseHTML = `
-    <p>Chào mừng quý khách đến mua sắm tại 5C Mobile. Sau khi truy cập vào website 5C Mobile để tham khảo hoặc mua sắm, quý khách đã đồng ý tuân thủ và ràng buộc với những quy định của 5C Mobile. Vui lòng xem kỹ các quy định và hợp tác với chúng tôi để xây dựng 1 website 5C Mobile ngày càng thân thiện và phục vụ tốt những yêu cầu của chính quý khách. Ngoài ra, nếu có bất cứ câu hỏi nào về những thỏa thuận trên đây, vui lòng email cho chúng tôi qua địa chỉ facebook 
+    <p>Chào mừng quý khách đến mua sắm tại 5C Mobile. Sau khi truy cập vào website 5C Mobile để tham khảo hoặc mua sắm, quý khách đã đồng ý tuân thủ và ràng buộc với những quy định của 5C Mobile. Vui lòng xem kỹ các quy định và hợp tác với chúng tôi để xây dựng 1 website 5C Mobile ngày càng thân thiện và phục vụ tốt những yêu cầu của chính quý khách. Ngoài ra, nếu có bất cứ câu hỏi nào về những thỏa thuận trên đây, vui lòng email cho chúng tôi qua địa chỉ facephone 
 
-    <a href="https://www.facebook.com/profile.php?id=61558973225461">Thế giới smartphone - 5C Mobile</a>
+    <a href="https://www.facephone.com/profile.php?id=61558973225461">Thế giới smartphone - 5C Mobile</a>
     </p>
     <h4>Tài khoản của khách hàng</h4>
     <p>Khi sử dụng dịch vụ 5C Mobile, quý khách sẽ cung cấp cho chúng tôi thông tin về địa chỉ email, mật khẩu và họ tên để có được 1 tài khoản tại đây. Việc sử dụng và bảo mật thông tin tài khoản là trách nhiệm và quyền lợi của quý khách khi sử dụng 5C Mobile. Ngoài ra, những thông tin khác trong tài khoản như tên tuổi, địa chỉ.... là những thông tin sẽ giúp 5C Mobile phục vụ quý khách tốt nhất. Trong trường hợp thông tin do quý khách cung cấp không đầy đủ hoặc sai dẫn đến việc không thể giao hàng cho quý khách, chúng tôi có quyền đình chỉ hoặc từ chối phục vụ, giao hàng mà không phải chịu bất cứ trách nhiệm nào đối với quý khách. Khi có những thay đổi thông tin của quý khách, vui lòng cập nhật lại thông tin trong tài khoản trong phần thông tin tài khoản. 

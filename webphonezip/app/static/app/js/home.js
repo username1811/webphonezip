@@ -153,7 +153,7 @@ addSwipe();
 // Load product
 var start = 1;
 var content = document.querySelector('.content .wrapper');
-var moreBook = document.getElementById('more-book-btn');
+var morephone = document.getElementById('more-phone-btn');
 
 // Showing 18 products when the web page finishes loading
 // Showing 20 products when the web page finishes loading
@@ -165,10 +165,10 @@ function fetchProducts() {
                 return;
             }
             let productHTML = products.map(product => `
-            <div class="book">
-                <a href="/product/${product.slugName}" class="book__link">
-                    <div class="book__img" style="background-image: url(${product.imageURL});"></div>
-                    <div class="book__info">
+            <div class="phone">
+                <a href="/product/${product.slugName}" class="phone__link">
+                    <div class="phone__img" style="background-image: url(${product.imageURL});"></div>
+                    <div class="phone__info">
                         <h4 class="info__name">${product.name}</h4>
                         <h4 class="info__price"><del>${formatInteger(product.cost)}đ</del>  ${formatInteger(product.price)}đ</h4>
                     </div>
@@ -199,7 +199,7 @@ function abc(selectedOption) {
 fetchProducts();
 
 // Display 18 more products when clicking the see more button
-moreBook.onclick = function () {
+morephone.onclick = function () {
     fetchProducts();
 }
 
@@ -211,7 +211,7 @@ select.addEventListener('change', function () {
     if (category == 'category0') {
         window.location.href = '/';
     } else {
-        document.getElementById('more-book-btn').style.display = 'none';
+        document.getElementById('more-phone-btn').style.display = 'none';
         document.querySelector('.content__heading').textContent = select.options[select.selectedIndex].textContent;
         fetchProductsByCategory(category);
     }
@@ -226,12 +226,12 @@ function fetchProductsByCategory(category) {
                 return;
             }
             let productHTML = products.map(product => `
-                <div class="book">
-                    <a href="/product/${product.slugName}" class="book__link">
-                        <div class="book__img" style="background-image: url(${product.imageURL});"></div>
-                        <div class="book__info">
+                <div class="phone">
+                    <a href="/product/${product.slugName}" class="phone__link">
+                        <div class="phone__img" style="background-image: url(${product.imageURL});"></div>
+                        <div class="phone__info">
                             <h4 class="info__name">${product.name}</h4>
-                            <h4 class="info__price"><del>${product.cost}đ</del>  ${product.price}đ</h4>
+                            <h4 class="info__price"><del>${formatInteger(product.cost)}đ</del>  ${formatInteger(product.price)}đ</h4>
                         </div>
                     </a>
                     <button type="button" data-product="${product.id}" data-action="add" class="add-to-cart">Thêm vào giỏ hàng</button>
@@ -250,7 +250,7 @@ function fetchProductsByCategory(category) {
 //         window.location.href = '/';
 //     } else {
 //         category = select.value;
-//         document.getElementById('more-book-btn').style.display = 'none';
+//         document.getElementById('more-phone-btn').style.display = 'none';
 //         document.querySelector('.content__heading').textContent = select.textContent;
 //         fetchProductsByCategory(category);
 //     }
@@ -298,10 +298,10 @@ function updateProductList(products) {
 
     // Tạo HTML cho từng sản phẩm trong mảng đã được sắp xếp
     let productHTML = products.map(product => `
-        <div class="book">
-            <a href="/product/${product.slugName}" class="book__link">
-                <div class="book__img" style="background-image: url(${product.imageURL});"></div>
-                <div class="book__info">
+        <div class="phone">
+            <a href="/product/${product.slugName}" class="phone__link">
+                <div class="phone__img" style="background-image: url(${product.imageURL});"></div>
+                <div class="phone__info">
                     <h4 class="info__name">${product.name}</h4>
                     <h4 class="info__price"><del>${formatInteger(product.cost)}đ</del>  ${formatInteger(product.price)}đ</h4>
                 </div>
