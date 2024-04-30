@@ -112,6 +112,28 @@ function sliderScroll() {
 // Automatically scroll slides when the web page loaded
 document.addEventListener('DOMContentLoaded', function () {
     sliderScroll();
+    var radioButtons = document.querySelectorAll('.sidebar__radio');
+    radioButtons.forEach(function(radioButton) {
+        radioButton.addEventListener('change', function() {
+            var category = radioButton.id;
+            if (category == 'category0') {
+                window.location.href = '/';
+            } else {
+                fetchProductsByCategory(category);
+            }
+        });
+    });
+    var radioButtons2 = document.querySelectorAll('.sidebar__radio2');
+    radioButtons2.forEach(function(radioButton) {
+        radioButton.addEventListener('change', function() {
+            var category = radioButton.id;
+            if (category == 'category0') {
+                window.location.href = '/';
+            } else {
+                filterProductsByPrice(category);
+            }
+        });
+    });
 });
 
 // Automatically update slide size when screen size changes

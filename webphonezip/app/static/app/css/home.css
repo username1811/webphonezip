@@ -15,24 +15,91 @@ html{
 body{
     background-color: #f2f1f1;
 }
-  
-.grid{
-    width: 1200px;
-    max-width: 100%;
+
+.content-parent{
     margin: 0 auto;
+    display: flex;
 }
 
+.content-left{
+    width: 300px;
+    background-color: #ffffff;
+    margin-top:  0px;
+    margin-left: auto;
+    border: 1px solid #d3d3d3;
+}
+
+.content-right{
+    margin-right: auto;
+    border: 1px solid #d3d3d3;
+}
+
+.sidebar {
+    background-color: #f9fcff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 10px ;
+    height: 100%;
+}
+
+.sidebar__heading .fa-filter {
+    font-size: 25px;
+    margin-right: 5px
+}
+
+.sidebar__heading {
+    font-size: 25px;
+    font-weight:500;
+    margin: 20px 0;
+}
+
+.sidebar_option {
+    display: block;
+    margin-left: 20px;
+}
+
+.sidebar__radio {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sidebar__radio2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sidebar__label {
+    display: inline-block;
+    padding: 8px 0;
+    color: #333;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sidebar__label:hover {
+    background-color: #e5e5e5;
+}
+
+
+.content-right{
+    background-color: #6ec267;
+    display: inline-block;
+}
+  
+
+
 /* Slider */
-.slider{
-    width: 1200px;
-    margin-top: 80px;
+.slider {
+    margin-top: 100px 0;
     padding: 0 20px;
-    padding-top: 100px;
+    padding-top: 120px;
+    padding-bottom: 20px;
     border: 1px solid #e0e0e0;
     border-bottom: none;
-    background-color: #fff;
+    background-color: #ffffec;
     display: flex;
     justify-content: space-between;
+    width: 100%; /* Tăng chiều rộng của slider */
 }
   
 .slider .slider__more{
@@ -280,13 +347,12 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
   
 .content .phone .info__name{
     font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 20px;
     word-wrap: break-word;
     white-space: normal;
     overflow: hidden;
@@ -322,8 +388,8 @@ body{
     font-size: 20px;
     margin: 0 auto;
     width: 240px;
-    height: 40px;
-    background-color: #1ac7b6;
+    height: 50px;
+    background-color: #d5f1d7;
     border: 1px solid #20e3d0;
     border-radius: 8px;
 }

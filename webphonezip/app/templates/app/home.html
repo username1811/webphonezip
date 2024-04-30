@@ -7,8 +7,6 @@
 {% endblock title %}
 
 {% block content %}
-
-    {% comment %} Slider, banner ads {% endcomment %}
     <div class="slider grid">
         <div class="slider__content">
             <button class="prev-slide" type="button"><i class="fa-solid fa-angle-left"></i></button>
@@ -31,55 +29,126 @@
             </a>
         </div>
     </div>
+    <div class="content-parent">
+        <div class="content-left">
+            <div class="sidebar">
+                <br>
+                <br>
+                <br>
 
-    {% comment %} Most searched product suggestions {% endcomment %}
-    <div class="content">
-        <div class="content__header">
-            <h2 class="content__heading">Danh sách sản phẩm</h2>
-            {% comment %} <div class="content__filter">
-                <h4>Danh mục</h4>
-                <div class="content__filter-input">
-                    <select class="filter-category" name="price">
-                        <option value="asc">Giá tăng dần</option>
-                        <option value="desc">Giá giảm dần</option>
-                    </select>
+                <h3 class="sidebar__heading"><i class="fa-solid fa-filter"></i>BỘ LỌC SẢN PHẨM</h3>
+
+                <div class="sidebar_option">
+                    <input type="radio" id="category0" name="category" class="sidebar__radio" checked>
+                    <label for="category0" class="sidebar__label">Tất cả sản phẩm</label>
                 </div>
-            </div> {% endcomment %}
 
-            <div class="content__filter-parent">
-                <div class="content__filter">
-                    <h4>Sắp xếp theo</h4>
-                    <div class="content__filter-input">
-                        <select class="filter-price" name="price">
-                            <option value="asc">Giá tăng dần</option>
-                            <option value="desc">Giá giảm dần</option>
-                        </select>
+                <div class="sidebar_option">
+                <input type="radio" id="category6" name="category" class="sidebar__radio">
+                <label for="category6" class="sidebar__label">iPhone</label>
+                </div>
+                
+                <div class="sidebar_option">
+
+                    <input type="radio" id="category1" name="category" class="sidebar__radio">
+                    <label for="category1" class="sidebar__label">iPhone cũ</label>
+                </div>
+                
+                <div class="sidebar_option">
+
+                    <input type="radio" id="category2" name="category" class="sidebar__radio">
+                    <label for="category2" class="sidebar__label">Tablet</label>
+                </div>
+                
+                <div class="sidebar_option">
+
+                    <input type="radio" id="category3" name="category" class="sidebar__radio">
+                    <label for="category3" class="sidebar__label">Samsung</label>
+                </div>
+                
+                <div class="sidebar_option">
+
+                    <input type="radio" id="category4" name="category" class="sidebar__radio">
+                    <label for="category4" class="sidebar__label">Oppo - Xiaomi</label>
+                </div>
+                
+                <div class="sidebar_option">
+
+                    <input type="radio" id="category5" name="category" class="sidebar__radio">
+                    <label for="category5" class="sidebar__label">Laptop</label>
+                </div>
+
+                <br>
+                <br>
+
+                <h3 class="sidebar__heading"><i class="fa-solid fa-filter"></i>SẮP XẾP THEO</h3>
+
+                <div class="sidebar_option">
+                    <input type="radio" id="asc" name="category2" class="sidebar__radio2">
+                    <label for="asc" class="sidebar__label">Giá tăng dần</label>
+                </div>
+
+                <div class="sidebar_option">
+                <input type="radio" id="desc" name="category2" class="sidebar__radio2">
+                <label for="desc" class="sidebar__label">Giá giảm dần</label>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="content-right">
+            
+            <div class="content">
+                <div class="content__header">
+                    <h2 class="content__heading">Danh sách sản phẩm</h2>
+                    {% comment %} <div class="content__filter">
+                        <h4>Danh mục</h4>
+                        <div class="content__filter-input">
+                            <select class="filter-category" name="price">
+                                <option value="asc">Giá tăng dần</option>
+                                <option value="desc">Giá giảm dần</option>
+                            </select>
+                        </div>
+                    </div> {% endcomment %}
+    
+                    <div class="content__filter-parent">
+                        <div class="content__filter">
+                            <h4>Sắp xếp theo</h4>
+                            <div class="content__filter-input">
+                                <select class="filter-price" name="price">
+                                    <option value="asc">Giá tăng dần</option>
+                                    <option value="desc">Giá giảm dần</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="content__filter">
+                            <h4>Lọc theo danh mục</h4>
+                            <div class="content__filter-input">
+                                <select class="filter-category" name="category">
+                                    <option value="category0">Chọn danh mục</option>
+                                    <option value="category6">iPhone</option>
+                                    <option value="category1">iPhone cũ</option>
+                                    <option value="category2">Tablet</option>
+                                    <option value="category3">Samsung</option>
+                                    <option value="category4">Oppo - Xiaomi</option>
+                                    <option value="category5">Laptop</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="content__filter">
-                    <h4>Lọc theo danh mục</h4>
-                    <div class="content__filter-input">
-                        <select class="filter-category" name="category">
-                            <option value="category0">Chọn danh mục</option>
-                            <option value="category6">iPhone</option>
-                            <option value="category1">iPhone cũ</option>
-                            <option value="category2">Tablet</option>
-                            <option value="category3">Samsung</option>
-                            <option value="category4">Oppo - Xiaomi</option>
-                            <option value="category5">Laptop</option>
-                        </select>
-                    </div>
+    
+                <div class="wrapper grid">
+                    {% comment %} List product {% endcomment %}
+                </div>
+    
+                <div class="content__more">
+                    <button type="button" id="more-phone-btn" class="content__more-btn">Xem thêm</button>
                 </div>
             </div>
         </div>
-
-        <div class="wrapper grid">
-            {% comment %} List product {% endcomment %}
-        </div>
-
-        <div class="content__more">
-            <button type="button" id="more-phone-btn" class="content__more-btn">Xem thêm</button>
-        </div>
+        {% comment %} Most searched product suggestions {% endcomment %}
+        
     </div>
 
     <script src="{% static 'app/js/home.js' %}"></script>
