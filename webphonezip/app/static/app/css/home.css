@@ -89,6 +89,7 @@ body{
 
 
 /* Slider */
+
 .slider {
     margin-top: 100px 0;
     padding: 0 20px;
@@ -99,7 +100,8 @@ body{
     background-color: #ffffec;
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Tăng chiều rộng của slider */
+    width: 1500px; /* Tăng chiều rộng của slider */
+    margin: 0 auto;
 }
   
 .slider .slider__more{
