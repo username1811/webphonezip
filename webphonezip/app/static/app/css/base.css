@@ -36,12 +36,13 @@ body{
   
 .header .nav{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1500px;
     padding: 0 4px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
   
 /* Nav logo */
