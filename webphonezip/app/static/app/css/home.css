@@ -391,9 +391,10 @@ body{
     margin: 0 auto;
     width: 240px;
     height: 50px;
-    background-color: #d5f1d7;
-    border: 1px solid #20e3d0;
+    background-color: #ffffff;
+    border: none;
     border-radius: 8px;
+    color: #5a5a5a;
 }
   
 .content .content__more .content__more-btn:hover{
