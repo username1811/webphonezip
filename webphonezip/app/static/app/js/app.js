@@ -3,13 +3,13 @@ const formSignUpHtml = `
     <form action="" method="POST" id="form-1">
         <div class="form-group form-username">
             <label for="username" class="form-label">Tên đăng nhập</label>
-            <input id="username" name="username" type="text" placeholder="VD: My name" class="form-control">
+            <input id="username" name="username" type="text" placeholder="Nhập tên đăng nhập của bạn" class="form-control">
             <span class="form-message"></span>
         </div>
 
         <div class="form-group form-email">
             <label for="email" class="form-label">Email</label>
-            <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+            <input id="email" name="email" type="text" placeholder="Nhập email của bạn" class="form-control">
             <span class="form-message"></span>
         </div>
 
@@ -33,7 +33,7 @@ const formSignInHtml = `
     <form action="" method="POST" id="form-1">
         <div class="form-group form-name-account">
             <label for="name-account" class="form-label">Tài khoản</label>
-            <input id="name-account" name="name-account" type="text" placeholder="Nhập username hoặc email của bạn" class="form-control">
+            <input id="name-account" name="name-account" type="text" placeholder="Nhập tên đăng nhập của bạn" class="form-control">
             <span class="form-message"></span>
         </div>
 
