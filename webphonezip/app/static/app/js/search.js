@@ -26,19 +26,21 @@ $(document).ready(function(){
     });
 
     buttonSearch.mousedown(function(){
-        buttonSearch.addClass('click');
-    });
-    
-    buttonSearch.mouseup(function(){
-        buttonSearch.removeClass('click');
         var data = inputSearch.val();
             Search(data);
     });
     
-    buttonSearch.mouseleave(function(){
-        buttonSearch.removeClass('click');
-    });
+    // buttonSearch.mouseup(function(){
+    //     buttonSearch.removeClass('click');
+    //     var data = inputSearch.val();
+    //         Search(data);
+    // });
+    
+    // buttonSearch.mouseleave(function(){
+    //     buttonSearch.removeClass('click');
+    // });
 });
 
 // Update amount product in shopcart
 addUpdateCartItemListener();
+console.log("end of file search.js");
