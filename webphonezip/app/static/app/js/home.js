@@ -177,29 +177,26 @@ var start = 1;
 var content = document.querySelector('.content .wrapper');
 var morephone = document.getElementById('more-phone-btn');
 
-// Showing 18 products when the web page finishes loading
-// Showing 20 products when the web page finishes loading
 function fetchProducts() {
-    fetch(`/api/products?start=${start}&limit=20`) // Thêm tham số limit=20 để lấy 20 sản phẩm từ API
+    fetch(`/api/products?start=${start}`) 
         .then(response => response.json())
         .then(products => {
             if (products.length === 0) {
                 return;
             }
             let productHTML = products.map(product => `
-            <div class="phone">
-                <a href="/product/${product.slugName}" class="phone__link">
-                    <div class="phone__img" style="background-image: url(${product.imageURL});"></div>
-                    <div class="phone__info">
-                        <h4 class="info__name">${product.name}</h4>
-                        <h4 class="info__price"><del>${formatInteger(product.cost)}đ</del>  ${formatInteger(product.price)}đ</h4>
-                    </div>
-                </a>
+                <div class="phone">
+                    <a href="/product/${product.slugName}" class="phone__link">
+                        <div class="phone__img" style="background-image: url(${product.imageURL});"></div>
+                        <div class="phone__info">
+                            <h4 class="info__name">${product.name}</h4>
+                            <h4 class="info__price"><del>${formatInteger(product.cost)}đ</del>  ${formatInteger(product.price)}đ</h4>
+                        </div>
+                    </a>
 
-                <button type="button" data-product="${product.id}" data-action="add" class="add-to-cart">Thêm vào giỏ hàng</button>
-            </div>
-        `).join('');
-
+                    <button type="button" data-product="${product.id}" data-action="add" class="add-to-cart">Thêm vào giỏ hàng</button>
+                </div>
+            `).join('');
             content.innerHTML += productHTML;
             addUpdateCartItemListener();
             start += 1;
