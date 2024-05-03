@@ -89,13 +89,10 @@ def product(request, slugName):
         cart = {'getCartItemsAmount': 0}
     
     allProducts = list(Product.objects.values('id', 'slugName', 'imageURL'))
-    random.shuffle(allProducts)  # Xáo trộn danh sách
-    if len(allProducts) > 30:
-        products = allProducts[:30]  # Lấy 30 sản phẩm đầu tiên sau khi xáo trộn
-    else:
-        products = allProducts
     product = get_object_or_404(Product, slugName=slugName)
-    context = {'cart': cart, 'products': products, 'product': product}
+    similar_products = Product.objects.filter(category=product.category)
+    show_products = list(similar_products) + list(allProducts[:30-len(similar_products)])
+    context = {'cart': cart, 'products': show_products, 'product': product}
     return render(request, 'app/product.html', context)
 
 # Load cart page
