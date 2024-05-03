@@ -44,7 +44,6 @@ const formSignInHtml = `
         </div>
 
         <button class="form-submit">Đăng nhập</button>
-        <div class="forgot-password">Quên mật khẩu ?</div>
     </form>
 `;
 
