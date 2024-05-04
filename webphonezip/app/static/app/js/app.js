@@ -42,7 +42,7 @@ const formSignInHtml = `
             <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
             <span class="form-message"></span>
         </div>
-
+        <div class="forgot-password" style="display:none; ">Quên mật khẩu ?</div>
         <button class="form-submit">Đăng nhập</button>
     </form>
 `;
